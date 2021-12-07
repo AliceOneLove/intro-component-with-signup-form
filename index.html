@@ -2,36 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="style.css" rel="stylesheet">
   <title>Frontend Mentor | Intro component with sign up form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="main-block">
+    <div class="left-block">
+      <h1 class="main-block__h1">Learn to code by<br> watching others</h1>
 
-  Learn to code by watching others
+      <p class="main-block__p">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.
+      </p> 
+    </div>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+    <div class="right-block">
+      <div class="right-block__subscription-badge">
+        Try it free 7 days then $20/mo. thereafter
+      </div>
 
-  Try it free 7 days then $20/mo. thereafter
+      <div class="inputs-block">
+        <input type="text" id="name" name="name" placeholder="Name" class="inputs-block__textbox">
+        <input type="text" id="last-name" name="last-name" placeholder="Last Name" class="inputs-block__textbox"> 
+        <input type="text" id="email" name="email" placeholder="Email Address" class="inputs-block__textbox">
+        <input type="password" id="password" name="password" placeholder="Password" class="inputs-block__textbox">
+      
+        <button class="inputs-block__btn">Claim your free trial</button> 
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+        <p class="inputs-block__p">
+          By clicking the button, you are agreeing to our <a href="#" class="inputs-block__a">Terms and Services</a>
+        </p>
+      </div>
+    </div>
+  </main>
 
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
