@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background: url(images/bg-intro-desktop.png), hsl(0, 100%, 74%);
+}
+
+.main-block {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+}
+
+.footer-block {
+    height: 10%;
+}
+
+.left-block {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    
+}
+
+.left-block__h1 {
+    font-weight: 700;
+    line-height: 55px;
+    font-size: 50px;
+    margin: 0;
+}
+
+.left-block__p {
+    width: 70%;
+    margin: 30px 5% 0 17%;
+}
+
+.right-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.right-block__subscription-badge {
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    width: 67%;
+    box-shadow: 0 8px hsl(249, 10%, 26%, .2);
+}
+
+.inputs-block {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 8px;
+    width: 67%;
+    box-shadow: 0 8px hsl(249, 10%, 26%, .2);
+}
+
+.inputs-block__textbox {
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 6px;
+    border: 1px solid hsl(250, 23%, 95%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.inputs-block__textbox:focus {
+    outline: 1px solid hsl(249, 10%, 26%);
+}
+
+.inputs-block__a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.inputs-block__p {
+    font-size: 10px;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputs-block__btn {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 6px;
+    padding: 15px 25px;
+    margin: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    box-shadow: inset 0 -3px hsl(249, 10%, 26%, .2);
+    transition: background-color .5s;
+}
+
+.inputs-block__btn:hover {
+    background-color: hsl(154, 65%, 68%);
+}
