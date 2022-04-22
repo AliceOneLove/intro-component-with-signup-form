@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="style.css" rel="stylesheet">
+  <script type="text/javascript" src="./index.js"></script>
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
         <input type="text" id="email" name="email" placeholder="Email Address" class="inputs-block__textbox">
         <input type="password" id="password" name="password" placeholder="Password" class="inputs-block__textbox">
       
-        <button class="inputs-block__btn">Claim your free trial</button> 
+        <button class="inputs-block__btn" onclick="checkInputs()">Claim your free trial</button> 
 
         <p class="inputs-block__p">
           By clicking the button, you are agreeing to our <a href="#" class="inputs-block__a">Terms and Services</a>
