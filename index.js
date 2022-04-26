@@ -7,6 +7,7 @@ function checkInputs() {
             + "outline: 1px solid hsl(0, 100%, 74%);");
             if (e == 'email') {
                 input.placeholder = "email@example.com";
+                input.classList.add('inputs-block__incorrect-email');
             }
         }
     }

@@ -20,15 +20,27 @@
     </div>
 
     <div class="right-block">
-      <div class="right-block__subscription-badge">
-        <b>Try it free 7 days</b> then $20/mo. thereafter
+      <div class="right-block__subscription-badge"> 
+        <b>Try it free 7 days</b> then $20/mo. thereafter <!-- исправить -->
       </div>
 
       <div class="inputs-block">
-        <input type="text" id="name" name="name" placeholder="Name" class="inputs-block__textbox">
-        <input type="text" id="last-name" name="last-name" placeholder="Last Name" class="inputs-block__textbox"> 
-        <input type="text" id="email" name="email" placeholder="Email Address" class="inputs-block__textbox">
-        <input type="password" id="password" name="password" placeholder="Password" class="inputs-block__textbox">
+        <div class="inputs-block__container">
+          <input type="text" id="name" name="name" placeholder="Name" class="inputs-block__textbox">
+          <p class="inputs-block__warning">First Name cannot be empty</p>
+        </div>
+        <div class="inputs-block__container">
+          <input type="text" id="last-name" name="last-name" placeholder="Last Name" class="inputs-block__textbox">
+          <p class="inputs-block__warning">Last Name cannot be empty</p>
+        </div>
+        <div class="inputs-block__container">
+          <input type="text" id="email" name="email" placeholder="Email Address" class="inputs-block__textbox">
+          <p class="inputs-block__warning">Looks like this is not an email</p>
+        </div>
+        <div class="inputs-block__container">
+          <input type="password" id="password" name="password" placeholder="Password" class="inputs-block__textbox">
+          <p class="inputs-block__warning">Password cannot be empty</p>
+        </div>
       
         <button class="inputs-block__btn" onclick="checkInputs()">Claim your free trial</button> 
 
