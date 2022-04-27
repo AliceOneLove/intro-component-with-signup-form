@@ -26,20 +26,20 @@
 
       <div class="inputs-block">
         <div class="inputs-block__container">
-          <input type="text" id="name" name="name" placeholder="Name" class="inputs-block__textbox">
-          <p class="inputs-block__warning">First Name cannot be empty</p>
+          <input type="text" id="inputs-block__name" name="name" placeholder="Name" class="inputs-block__textbox">
+          <p class="inputs-block__warning" id="inputs-block__name-warning" hidden><i>First Name cannot be empty</i></p>
         </div>
         <div class="inputs-block__container">
-          <input type="text" id="last-name" name="last-name" placeholder="Last Name" class="inputs-block__textbox">
-          <p class="inputs-block__warning">Last Name cannot be empty</p>
+          <input type="text" id="inputs-block__last-name" name="last-name" placeholder="Last Name" class="inputs-block__textbox">
+          <p class="inputs-block__warning" id="inputs-block__last-name-warning" hidden><i>Last Name cannot be empty</i></p>
         </div>
         <div class="inputs-block__container">
-          <input type="text" id="email" name="email" placeholder="Email Address" class="inputs-block__textbox">
-          <p class="inputs-block__warning">Looks like this is not an email</p>
+          <input type="text" id="inputs-block__email" name="email" placeholder="Email Address" class="inputs-block__textbox">
+          <p class="inputs-block__warning" id="inputs-block__email-warning" hidden><i>Looks like this is not an email</i></p>
         </div>
         <div class="inputs-block__container">
-          <input type="password" id="password" name="password" placeholder="Password" class="inputs-block__textbox">
-          <p class="inputs-block__warning">Password cannot be empty</p>
+          <input type="password" id="inputs-block__password" name="password" placeholder="Password" class="inputs-block__textbox">
+          <p class="inputs-block__warning" id="inputs-block__password-warning" hidden><i>Password cannot be empty</i></p>
         </div>
       
         <button class="inputs-block__btn" onclick="checkInputs()">Claim your free trial</button> 
