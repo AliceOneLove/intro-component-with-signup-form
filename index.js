@@ -14,10 +14,19 @@ function checkInputs() {
             input.setAttribute("style", "background: url(images/icon-error.svg) no-repeat 95%;"
             + "outline: 1px solid hsl(0, 100%, 74%);");
             if (e == 'inputs-block__email') {
-                input.placeholder = "email@example.com";
+                input.placeholder = 'email@example.com';
                 input.classList.add('inputs-block__incorrect-email');
             }
             warning.hidden = false;
+        }
+        else {
+            input.removeAttribute("style", "background: url(images/icon-error.svg) no-repeat 95%;"
+            + "outline: 1px solid hsl(0, 100%, 74%);");
+            if (e == 'inputs-block__email') {
+                input.placeholder = 'Email Address';
+                input.classList.remove('inputs-block__incorrect-email');
+            }
+            warning.hidden = true;
         }
     }
 }
